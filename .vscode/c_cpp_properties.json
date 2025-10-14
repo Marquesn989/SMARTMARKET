@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "name": "WinLibs (gcc)",
+      "includePath": [
+        "${workspaceFolder}/src",
+        "C:/Users/a35560/SmartMarket/raylib/include"
+      ],
+      "defines": [
+        "_DEFAULT_SOURCE"
+      ],
+      "compilerPath": "C:/Users/a35560/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.MCF.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/gcc.exe",
+      "cStandard": "c99",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "gcc-x64",
+      "browse": {
+        "path": [
+          "${workspaceFolder}/src",
+          "C:/Users/a35560/SmartMarket/raylib/include"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ],
+  "version": 4
+}

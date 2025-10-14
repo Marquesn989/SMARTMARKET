@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build SMARTMARKET",
+      "type": "shell",
+      "command": "C:/Users/a35560/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.MCF.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/mingw32-make.exe",
+      "args": ["all"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": ["$gcc"],
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "Run SMARTMARKET",
+      "type": "shell",
+      "command": "${workspaceFolder}/build/smartmarket.exe",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": { "PATH": "C:/Users/a35560/SmartMarket/raylib/lib;${env:PATH}" }
+      },
+      "dependsOn": ["Build SMARTMARKET"]
+    },
+    {
+      "label": "Clean SMARTMARKET",
+      "type": "shell",
+      "command": "C:/Users/a35560/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.MCF.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/mingw32-make.exe",
+      "args": ["clean"],
+      "options": { "cwd": "${workspaceFolder}" }
+    },
+    {
+      "label": "Rebuild SMARTMARKET",
+      "type": "shell",
+      "command": "C:/Users/a35560/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.MCF.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/mingw32-make.exe",
+      "args": ["rebuild"],
+      "options": { "cwd": "${workspaceFolder}" }
+    }
+  ]
+}
