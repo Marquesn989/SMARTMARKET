@@ -34,5 +34,14 @@
       "args": ["rebuild"],
       "options": { "cwd": "${workspaceFolder}" }
     }
+    ,
+    {
+      "label": "Compile & Run SMARTMARKET (helper)",
+      "type": "shell",
+      "command": "powershell",
+      "args": ["-ExecutionPolicy","Bypass","-File","${workspaceFolder}\\scripts\\compile_and_run.ps1"],
+      "group": { "kind": "build", "isDefault": false },
+      "presentation": { "reveal": "always" }
+    }
   ]
 }
